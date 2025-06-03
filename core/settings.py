@@ -38,7 +38,11 @@ INSTALLED_APPS = [
     'blog',
     'tailwind',
     'theme',
+    'donations',
 ]   
+STRIPE_PUBLIC_KEY = os.environ.get('STRIPE_PUBLIC_KEY')
+STRIPE_SECRET_KEY = os.environ.get('STRIPE_SECRET_KEY')
+
 
 TAILWIND_APP_NAME = 'theme'
 INTERNAL_IPS = [
