@@ -23,5 +23,6 @@ urlpatterns = [
     path('',HomeView.as_view(), name = "home"),
     path('blog/',include('blog.urls', namespace='blog')),
     path("__reload__/", include("django_browser_reload.urls")),
+    path('donations/', include('donations.urls', namespace='donations')),
     
 ]

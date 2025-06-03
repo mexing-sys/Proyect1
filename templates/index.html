@@ -1,4 +1,13 @@
 {% extends "base.html" %}
 
-{% block content %}<h1>Hola Visita mi Blog <a class="text-red-600"  href="{% url 'blog:home' %}">   Aquí  </a></h1>{% endblock content %}
+{% block content %}<h1>Hola Visita mi Blog <a class="text-red-600"  href="{% url 'blog:home' %}">   Aquí  </a></h1>
+<br>
+<a href="{% url 'donations:donations' %}">
+  <button class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
+    Donar
+  </button>
+</a>
+
+{% endblock content %}
+
 
